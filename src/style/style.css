@@ -1,0 +1,77 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Droid Sans Mono', 'monospace', monospace;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  font-size: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  outline:none;
+}
+
+.view {
+  height: 60%;
+  flex-grow: 1;
+  overflow: hidden;
+  box-sizing: border-box;
+  resize: vertical;
+  min-height: 10%;
+  max-height: 90%;
+  border-bottom: 2px solid grey;
+}
+
+.heightFull {
+  height: 100%;
+  overflow: auto;
+}
+
+.currentFrame {
+  background-color: #1960CE;
+  color: white;
+}
+
+.List {
+  flex-grow: 1;
+}
+
+.Item {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  padding: 0.2rem 1rem 0.2rem 0rem;
+  flex-grow: 1;
+  user-select: none;
+  white-space:nowrap;
+}
+
+.looking {
+  border: 1px solid #1960CE;
+}
+
+.noLooking {
+  border: 1px solid transparent;
+}
+
+.noLooking:hover {
+  background-color: #e0e0e0;
+}
+
+.lostParent {
+  border: 1px solid transparent;
+  color: gray;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column
+}
